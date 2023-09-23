@@ -4,10 +4,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.8rem;
+    gap: 2rem;
     position: fixed;
     right: 95%;
-    bottom: 0%;
+    bottom: 0;
     animation: fadeIn 4s ease;
     animation-delay: 2s;
     animation-fill-mode: forwards;
@@ -15,36 +15,35 @@
 
 .socials-icon {
     color: #fff;
+}
 
-    && :hover {
-        color: #553d3d;
-        transition: 0.3s;
-    }
+.socials-icon:hover {
+    color: var(--color-light);
+    transition: 0.3s;
 }
 
 @keyframes fadeIn {
     to {
         opacity: 1;
     }
-    
 }
 
 .socials::after {
     content: '';
     width: 1px;
     height: 10rem;
-    background: var(--color-light-transparent);
+    background: var(--color-white);
 }
 
-/* ============= MEDIA QUERIES (MEDIUM) ===================*/
+/* ### MEDIA QUERIES (MEDIUM) ### */
 @media screen and (max-width:1024px) {  
     .socials {
         opacity: 0;
         display: flex;
         flex-direction: row;
         width: 100%;
-        gap: 4rem; /* Sets gap between the icons */
-        position: fixed; /* Fixes it in place on the page */
+        gap: 4rem;
+        position: fixed;
         justify-content: center;
         right: auto;
         bottom: 10%;
@@ -55,7 +54,7 @@
         content: '';
         width: 10rem;
         height: 1px;
-        background: var(--color-light-transparent);
+        background: var(--color-white);
     }
     
     .socials::before {
@@ -63,6 +62,6 @@
         content: '';
         width: 10rem;
         height: 1px;
-        background: var(--color-light-transparent);
+        background: var(--color-white);
     }
 }

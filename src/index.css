@@ -1,24 +1,48 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
 }
 
 @font-face {
-  font-family: 'SaolDisplay-Regular';
-  src: local('SaolDisplay-Regular'), url(./assets/fonts/SaolDisplay-Regular.ttf) format('truetype');
+    font-family: "SaolDisplay-Regular";
+    src: local("SaolDisplay-Regular"),
+        url(./assets/fonts/SaolDisplay-Regular.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: 'PlayfairDisplay-Italic';
-  src: local('PlayfairDisplay-Italic'), url(./assets/fonts/Playfair_Display/static/PlayfairDisplay-Italic.ttf) format('truetype');
+    font-family: "PlayfairDisplay-Italic";
+    src: local("PlayfairDisplay-Italic"),
+        url(./assets/fonts/Playfair_Display/static/PlayfairDisplay-Italic.ttf)
+            format("truetype");
 }
 
+:root {
+    --color-bg: #cec6c6;
+    --color-white: #ffffff;
+    --color-dark: rgb(80, 80, 80);
+    --color-light: rgb(214, 255, 255);
+
+    --transition: all 400ms ease;
+    --transition1: all 200ms ease-out;
+
+    --container-width-lg: 75%;
+    --container-width-md: 85%;
+    --container-width-sm: 90%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

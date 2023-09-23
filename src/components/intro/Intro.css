@@ -9,9 +9,7 @@
 }
 
 .profile-img {
-    /* position: absolute; */
     width: 35%;
     border-radius: 20px;
     box-shadow: #fff;
-    /* left: 35%; */
 }

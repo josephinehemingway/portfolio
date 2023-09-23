@@ -6,7 +6,7 @@
     width: 100%;
     height: 100vh;
     /*min-height: 100vh;*/
-    background: #cec6c6;
+    background: var(--color-bg);
     overflow-y: scroll;
     overscroll-behavior-y: contain;
     scroll-snap-type: y mandatory;

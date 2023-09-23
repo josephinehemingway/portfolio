@@ -2,7 +2,7 @@ import React from 'react';
 import {StyledText, StyledTitle } from '../reusable/Styles';
 import './Intro.css'
 import './../Components.css'
-import Fade from 'react-reveal/Fade'; // Importing Zoom effect
+import Fade from 'react-reveal/Fade';
 
 type Props = {
     onClickExplore?: React.MouseEventHandler;
@@ -21,8 +21,6 @@ const Intro: React.FC<Props> = ({ onClickExplore }) => {
                         <StyledTitle margintop={'0.25rem'}>josephine </StyledTitle>
                         <StyledTitle marginleft={'3rem'}>hemingway </StyledTitle>
                         
-                        {/* <h1 className={'outline'}>josephine </h1> */}
-
                         <StyledText>I love to design web UIs</StyledText>
                     </Fade>
                 </div>
