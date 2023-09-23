@@ -1,0 +1,17 @@
+.outline {
+    color: transparent;
+    -webkit-text-stroke: 0.05px #fff;
+    font-size: calc(35px + 6vw);
+    font-family: PlayfairDisplay-Italic, serif;
+    position: relative;
+    bottom: 251px;
+    paint-order: stroke fill;
+}
+
+.profile-img {
+    /* position: absolute; */
+    width: 35%;
+    border-radius: 20px;
+    box-shadow: #fff;
+    /* left: 35%; */
+}

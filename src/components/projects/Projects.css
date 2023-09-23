@@ -1,0 +1,25 @@
+.projectCard {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: start;
+
+}
+
+.projectDetails {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.projectTitle {
+    font-weight: 300;
+    margin-top: 0;
+}
+
+.projectImg {
+    width: 45%;
+    height: 380px;
+    object-fit: cover;
+}

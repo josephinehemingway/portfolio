@@ -2,37 +2,139 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.loading-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background: var(background-color);
+  z-index: 1;
+  animation: slideUp 1s ease, fadeOut 1.5s ease;
+  animation-delay: 3s, 3s;
+  animation-fill-mode: forwards;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.main-page {
+  opacity: 0;
+  transform: translateY(-100px);
+  animation: fadeIn 1.5s ease, slideDown 1s ease;
+  animation-delay:3s, 3s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
 
-.App-header {
-  background-color: #ffffff;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@keyframes slideDown {
+  to {
+    transform: translateY(0px);
+  }
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes fadeOut {
   from {
-    transform: rotate(0deg);
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(-100px);
+  }
+}
+
+#svg__bash {
+  height: 300px;
+  width: 300px; 
+  stroke: rgb(30, 31, 98);
+  fill-opacity: 0;
+  stroke-width: 0.5px;
+  stroke-dasharray: 450;
+  animation: draw 5s,slide__shrink 2s;
+  animation-delay:0s, 0.5s;
+  animation-fill-mode: forwards;
+  transition: var(--transition);
+  position: fixed;
+}
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: 450;
   }
   to {
-    transform: rotate(360deg);
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes slide__shrink {
+  from {
+    height: 300px;
+    width: 300px; 
+    transform: translateX(0);
+    fill-opacity: 0;
+    stroke: rgb(55, 24, 24);
+  }
+  to {
+    height: 200px;
+    width: 200px; 
+    transform: translateX(-300px);
+    fill-opacity: 0;
+    stroke: var(--color-light);
+  }
+}
+
+#svg__message {
+  height: 150px;
+  width: 0px;
+  text-wrap: nowrap;
+  overflow: hidden;
+  animation: slide__right 2s;
+  animation-delay:0.5s;
+  animation-fill-mode: forwards;
+  transition: var(--transition);
+}
+
+@keyframes slide__right {
+  from {
+    width: 0px;
+    transform: translateX(100px);
+  }
+
+  to {
+    width: 500px;
+    transform: translateX(80px);
+  }
+}
+
+.animation {
+  width: 64px;
+  height: 64px;
+  border: 8px solid;
+  border-color: #3FFFF3 transparent #3d5af1 transparent;
+  border-radius: 50%;
+  animation: spin-anim 1.2s linear infinite;
+}
+
+@keyframes spin-anim {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
   }
 }

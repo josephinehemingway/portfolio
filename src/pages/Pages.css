@@ -6,8 +6,17 @@
     width: 100%;
     height: 100vh;
     /*min-height: 100vh;*/
-    background: #eabebe;
+    background: #cec6c6;
     overflow-y: scroll;
     overscroll-behavior-y: contain;
     scroll-snap-type: y mandatory;
+}
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: 100vh;
 }

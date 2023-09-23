@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'SaolDisplay-Regular';
+  src: local('SaolDisplay-Regular'), url(./assets/fonts/SaolDisplay-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay-Italic';
+  src: local('PlayfairDisplay-Italic'), url(./assets/fonts/Playfair_Display/static/PlayfairDisplay-Italic.ttf) format('truetype');
+}
+
