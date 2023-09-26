@@ -1,8 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-        "Helvetica Neue", sans-serif;
+    font-family: "Poppins", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -13,10 +13,17 @@ code {
 }
 
 @font-face {
+    font-family: "Gistesy";
+    src: local("Gistesy"),
+    url(./assets/fonts/gistesy/Gistesy.ttf) format("truetype");
+}
+
+@font-face {
     font-family: "SaolDisplay-Regular";
     src: local("SaolDisplay-Regular"),
         url(./assets/fonts/SaolDisplay-Regular.ttf) format("truetype");
 }
+
 
 @font-face {
     font-family: "PlayfairDisplay-Italic";
@@ -26,9 +33,10 @@ code {
 }
 
 :root {
-    --color-bg: #cec6c6;
+    --color-bg: #F5F0EC;
     --color-white: #ffffff;
-    --color-dark: rgb(80, 80, 80);
+    --color-dark: #464646;
+    --color-lightgray: #949494;
     --color-light: rgb(214, 255, 255);
 
     --transition: all 400ms ease;

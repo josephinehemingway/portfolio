@@ -8,8 +8,8 @@
     /*min-height: 100vh;*/
     background: var(--color-bg);
     overflow-y: scroll;
-    overscroll-behavior-y: contain;
-    scroll-snap-type: y mandatory;
+    /*overscroll-behavior-y: contain;*/
+    /*scroll-snap-type: y mandatory;*/
 }
 
 .page-content {

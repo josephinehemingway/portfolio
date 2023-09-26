@@ -17,11 +17,9 @@ const Intro: React.FC<Props> = ({ onClickExplore }) => {
             <div className='content-body'>
                 <div className={'text-div'}>
                     <Fade bottom cascade>
-                        <StyledText >Hello! My name is </StyledText>
+                        <StyledText >Hello! I'm </StyledText>
                         <StyledTitle margintop={'0.25rem'}>josephine </StyledTitle>
                         <StyledTitle marginleft={'3rem'}>hemingway </StyledTitle>
-                        
-                        <StyledText>I love to design web UIs</StyledText>
                     </Fade>
                 </div>
                 <img alt='profilepic' className={'profile-img'} src={picUrl}/>

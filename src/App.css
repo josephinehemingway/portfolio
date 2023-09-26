@@ -18,11 +18,11 @@
 }
 
 .main-page {
-    opacity: 0;
-    transform: translateY(-100px);
-    animation: fadeIn 1.5s ease, slideDown 1s ease;
-    animation-delay: 3s, 3s;
-    animation-fill-mode: forwards;
+    /*opacity: 0;*/
+    /*transform: translateY(-100px);*/
+    /*animation: fadeIn 1.5s ease, slideDown 1s ease;*/
+    /*animation-delay: 3s, 3s;*/
+    /*animation-fill-mode: forwards;*/
 }
 
 @keyframes fadeIn {
