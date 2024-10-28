@@ -67,10 +67,26 @@
     box-shadow: 0 2px 10px var(--color-gray-6);
 }
 
+.mobile {
+    @media (max-width: 600px) {
+        width: 108px;
+    } 
+
+    @media (max-width: 400px) {
+        width: 100px;
+    } 
+
+    width: calc(100px + 8vw);
+    margin-right: 3rem;
+    object-fit: cover;
+    box-shadow: 0 2px 10px var(--color-gray-6);
+}
+
 .imgContainer {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .tbpBanner {

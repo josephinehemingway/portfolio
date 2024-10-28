@@ -1,7 +1,8 @@
 import React from 'react'
 import { SectionProps } from '../about/about'
 import ProjectCard from './projectsCard'
-import { projects } from '../../static'
+import { mobileProjects, otherProjects, projects } from '../../static'
+import { Fade } from 'react-awesome-reveal'
 
 
 const ProjectsSection: React.FC<SectionProps> = (props) => {
@@ -13,13 +14,51 @@ const ProjectsSection: React.FC<SectionProps> = (props) => {
         />
     })
 
+    const mobileProjectCards = mobileProjects.map((proj, index) => {
+        return <ProjectCard
+            isMobile={true}
+            key={index}
+            project={proj}
+        />
+    })
+
+    const otherProjectCards = otherProjects.map((proj, index) => {
+        return <ProjectCard
+            isMobile={true}
+            key={index}
+            project={proj}
+        />
+    })
+
     return (
         <div ref={props.sectionRef} className='column'>
             <h3 className="sectionHeading">
                 FEATURED PROJECTS / <b className='accent'>software engineering</b>
             </h3>
 
-            {projectCards}
+            <Fade cascade damping={0.2}>
+                {projectCards}
+            </Fade>
+
+            <h3 className="sectionHeading">
+                FEATURED PROJECTS / <b className='accent'>mobile</b>
+            </h3>
+            
+            <Fade cascade damping={0.2}>
+                <div className='responsiveRow'>
+                    {mobileProjectCards}
+                </div>
+            </Fade>
+
+            <h3 className="sectionHeading">
+                FEATURED PROJECTS / <b className='accent'>others</b>
+            </h3>
+
+            <Fade cascade damping={0.2}>
+                <div className='responsiveRow'>
+                    {otherProjectCards}
+                </div>
+            </Fade>
         </div>
     )
 }

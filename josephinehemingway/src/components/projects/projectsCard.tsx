@@ -18,43 +18,61 @@ export interface Project {
 
 export interface Props {
     project: Project
+    isMobile?: boolean
 }
 
-const ProjectCard: React.FC<Props> = ({ project }) => {
+const ProjectCard: React.FC<Props> = ({ project, isMobile }) => {
     const tags = project.techStack && project.techStack.map((tech) => {
         return <CustomTag text={tech} />
     })
+
+    let moreInfoLink
+
+    if (project.moreInfo) {
+        moreInfoLink = <a href={project.moreInfo} target="_blank" rel="noopener noreferrer">here</a>
+    }
+
     return (
         <div className='responsiveRow'>
-            <div className='imgContainer'>
-                <Image.PreviewGroup>
-                    <Carousel
-                        className="thumbnail"
-                        arrows
-                    >
-                        {project.imgUrls.map((url, index) => (
-                            <Image
-                                key={index}
-                                src={url}
-                                alt=""
-                                style={{ marginRight: "1rem" }}
-                            />
-                        ))}
-                    </Carousel>
-                </Image.PreviewGroup>
-            </div>
-            <div className='column' style={{ marginTop: '1rem' }}>
-                <div className='itemLabel'>{project.title}</div>
-                <p className="label">{project.desc}</p>
+            <Image.PreviewGroup>
+                <Carousel
+                    className={ isMobile ? 'mobile' : "thumbnail"}
+                    arrows
+                >
+                    {project.imgUrls.map((url, index) => (
+                        <Image
+                            key={index}
+                            src={url}
+                            alt=""
+                            style={{ marginRight: "1rem" }}
+                        />
+                    ))}
+                </Carousel>
+            </Image.PreviewGroup>
+            
+            <div className='column' style={{ marginTop: '1rem', marginRight: isMobile ? '2rem': 0 }}>
+                <div className='responsiveRow' style={{marginBottom: '1rem'}}>
+                    <div className='itemLabel'>
+                        {project.title}
+                    </div>
+
+                    {project.url && 
+                        <a href={project.url} target="_blank" rel="noopener noreferrer" style={{margin: 0}}>
+                            View Product Demo <ArrowRightOutlined /> 
+                        </a>
+                    }
+                </div>
+                <p className="label">
+                    {project.desc} 
+                    {moreInfoLink && 
+                    <span>
+                        {' '} Read more {moreInfoLink}.
+                    </span>
+                    }
+                </p>
                 <span className='tagsContainer'>
                     {tags}
                 </span>
-                {
-                    project.url && <a href={project.url} target="_blank" rel="noopener noreferrer">View Product Demo <ArrowRightOutlined /> </a>
-                }
-                {
-                    project.moreInfo && <a href={project.moreInfo} target="_blank" rel="noopener noreferrer">More information <ArrowRightOutlined /> </a>
-                }
             </div>
         </div>
     )
