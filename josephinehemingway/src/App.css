@@ -1,0 +1,26 @@
+#root {
+  max-width: 1280px;
+  text-align: center;
+
+  /* --color-bg: #F5F0EC; */
+  --color-bg: #ffffff;
+  --color-white: #ffffff;
+  --color-dark: #464646;
+  --color-mediumgray: #6c6c6c;
+  --color-lightgray: #949494;
+  --color-light: rgb(214, 255, 255);
+  --color-gray-6: #bfbfbf;
+  --color-gray-7: #8c8c8c;
+  --color-gray-8: #595959;
+
+  --transition: all 400ms ease;
+  --transition1: all 200ms ease-out;
+
+  --container-width-lg: 75%;
+  --container-width-md: 85%;
+  --container-width-sm: 90%;
+
+  --color-link: #e6b8b0;
+  --color-hover: #d78383;
+}
+
