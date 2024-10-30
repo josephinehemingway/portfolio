@@ -8,7 +8,7 @@ export interface Experience {
     company: string
     role: string
     date: string
-    desc: string
+    desc: string | JSX.Element
     techStack?: string[]
     url?: string
 }
@@ -24,7 +24,7 @@ const ExperienceCard: React.FC<Props> = ({experience}) => {
     
   return (
     <div className='responsiveRow'>
-        <div className='column left' style={{marginRight: 0}}>
+        <div className='column left' style={{marginRight: '1rem'}}>
             <h3 className="itemLabel">
                 {experience.company}
             </h3>
@@ -33,24 +33,27 @@ const ExperienceCard: React.FC<Props> = ({experience}) => {
             </h3>
         </div>
         <div className='column'>
-            <h3 className="itemLabel">
-                {experience.role}
-            </h3>
+            <div className='responsiveRow' style={{marginBottom: '0.5rem'}}>
+                <h3 className="itemLabel itemLabelAccent">
+                    {experience.role}
+                </h3>
+                {experience.url && 
+                    <a target="_blank" rel="noopener noreferrer" href={experience.url} style={{margin: 0}}>
+                        View Works <ArrowRightOutlined /> 
+                    </a>
+                }
+            </div>
             <p style={{marginTop: '0.5rem'}}>
                 {experience.desc}
             </p>
-
-            {experience.url && 
-                <a target="_blank" rel="noopener noreferrer" href={experience.url} >
-                    View Works <ArrowRightOutlined /> 
-                </a>
-            }
 
             {tags && 
                 <span className='tagsContainer'>
                     {tags}
                 </span>
             }
+
+            
         </div>
     </div>
   )

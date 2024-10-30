@@ -26,8 +26,8 @@ const Home = () => {
 	}
 
     const portfolioLinks = (
-        <>
-            <h3 className="accent" style={{marginTop: '3rem'}}>
+        <div className="column" style={{margin: '3rem 0'}}>
+            <h3 className="accent">
                 Select Portfolio
             </h3>
             {
@@ -39,7 +39,7 @@ const Home = () => {
                     />
                 ))
             }
-        </>
+        </div>
     )
 
     return (
@@ -55,36 +55,33 @@ const Home = () => {
                     <div className="column left">
                         <img className='illustration' src={Jo} />
 
-                        <div className="name">
-                            josephine hemingway
+                        <div className="firstname">
+                            Josephine
                         </div>
-                        <h3 className="subtitle">
-                            Hi! I am a 
-                        </h3>
-                        <h3 className="subtitle">
-                            Software Engineer /
-                        </h3>
-                        <h3 className="subtitle">
-                            Entrepreneur / 
-                        </h3>
-                        <h3 className="subtitle">
-                            Designer
-                        </h3>
+                        <div className="name">
+                            Hemingway
+                        </div>
 
                         {portfolioLinks}
                     </div>
 
                     <div className="column">
+                        <h1> hello there!</h1>
+                        <div className={'wrapper'}>
+                            <div className={'static'}>I'm</div>
+                            <ul className={'dynamic'}>
+                                <li><span className={'static'}>a</span> UI developer</li>
+                                <li><span className={'static'}>a</span> designer</li>
+                                <li><span className={'static'}>an</span> entrepreneur</li>
+                                <li><span className={'static'}>a</span> photographer</li>
+                            </ul>
+                        </div>
+                        
+                        
                         <About sectionRef={aboutRef}/>
-
-                        {/* <ProjectsSection sectionRef={projectsRef}/> */}
 
                         <ExperienceSection experienceType={selectedPortfolio} sectionRef={experienceRef}/>
 
-                        {/* <a>
-                            View Projects 
-                            <ArrowRightOutlined className="icon"/>
-                        </a> */}
                     </div>
                 </div>
             </div>

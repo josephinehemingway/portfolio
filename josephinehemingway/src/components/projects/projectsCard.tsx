@@ -7,7 +7,7 @@ import { CustomTag } from '../reusable'
 
 export interface Project {
     title: string
-    desc: string
+    desc: string | JSX.Element
     imgUrls: string[];
     date?: string
     company?: string
@@ -51,7 +51,7 @@ const ProjectCard: React.FC<Props> = ({ project, isMobile }) => {
             </Image.PreviewGroup>
             
             <div className='column' style={{ marginTop: '1rem', marginRight: isMobile ? '2rem': 0 }}>
-                <div className='responsiveRow' style={{marginBottom: '1rem'}}>
+                <div className='responsiveRow' style={{marginBottom: '0.5rem'}}>
                     <div className='itemLabel'>
                         {project.title}
                     </div>

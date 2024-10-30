@@ -35,6 +35,14 @@
     } 
 }
 
+.itemLabelAccent {
+    font-size: 18px;
+
+    @media (max-width: 1000px) {
+        font-size: 14px;
+    } 
+}
+
 .sectionHeading {
     font-size: 22px;
     font-weight: 400;
@@ -107,6 +115,8 @@
     align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
+    max-width: calc(100vw - 25%);
+
     /* height: 100%; */
 
     @media (max-width: 600px) {
@@ -133,7 +143,7 @@
     height: 100%;
     margin-bottom: 2rem;
 
-    @media (min-width: 1000px) {
+    @media (min-width: 1200px) {
         flex-direction: row;
         justify-content: space-between;
     }     
@@ -156,4 +166,8 @@
 
 .selected {
     color: var(--color-hover)
+}
+
+.bold {
+    font-weight: 600;
 }

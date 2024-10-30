@@ -46,7 +46,7 @@
         position: fixed;
         justify-content: center;
         right: auto;
-        bottom: 5%;
+        bottom: 0.5rem;
         border-radius: 50rem;
     }
 

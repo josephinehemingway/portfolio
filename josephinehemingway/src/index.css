@@ -21,6 +21,10 @@ p {
   text-align: start;
   margin-top: 1rem;
   margin-bottom: 1rem;
+
+  @media (max-width: 600px) {
+    font-size: 14px;
+  }
 }
 
 @font-face {

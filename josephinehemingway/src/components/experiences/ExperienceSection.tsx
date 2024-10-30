@@ -4,7 +4,7 @@ import ExperienceCard from './experienceCard'
 import { SectionProps } from '../about/about'
 import { Fade } from "react-awesome-reveal";
 import { ArrowRightOutlined } from '@ant-design/icons';
-import EducationCard from './educationCard';
+// import EducationCard from './educationCard';
 
 interface Props extends SectionProps {
     experienceType: portfolio
@@ -59,13 +59,13 @@ const ExperienceSection: React.FC<Props> = (props) => {
 
     return (
         <div ref={props.sectionRef}>
-            <h3 className="sectionHeading">
+            {/* <h3 className="sectionHeading">
                 EDUCATION 
             </h3>
 
             <Fade cascade damping={0.2}>
                 <EducationCard />
-            </Fade>
+            </Fade> */}
 
             <h3 className="sectionHeading">
                 EXPERIENCE / <b className='accent'>{props.experienceType.toLowerCase()}</b>

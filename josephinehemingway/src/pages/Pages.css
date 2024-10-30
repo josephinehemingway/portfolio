@@ -1,3 +1,15 @@
+h1 {
+    font-family: Poppins;
+    font-weight: 500;
+    color: var(--color-dark);
+    margin: 0;
+    font-size: 40px;
+
+    @media (max-width: 1000px) {
+        margin-bottom: 2rem;
+    } 
+}
+
 .page {
     display: flex;
     flex-direction: column;
@@ -21,7 +33,7 @@
 }
 
 .illustration {
-    width: 50%;
+    width: 70%;
     margin-bottom: 1rem;
 
     @media (max-width: 600px) {
@@ -42,27 +54,34 @@
     } 
 }
 
+.firstname {
+    font-family: Gistesy;
+    font-size: 90px;
+    line-height: 80px;
+}
+
 .name {
     color: var(--color-dark);
     font-family: Prata;
 
     font-weight: 300;
-    font-size: 50px;
-    line-height: 70px;
+    font-size: 40px;
+    line-height: 50px;
     text-align: start;
-    margin: 0 0 2rem 0;
+    margin: 0 0 2rem 2rem;
+    letter-spacing: 5px;
 
     @media (max-width: 600px) {
-        font-size: 45px;
-        line-height: 55px;
+        font-size: 30px;
+        line-height: 35px;
     } 
 }
 
 .accent {
     color: var(--color-dark);
-    font-family: Prata;
+    font-family: Poppins;
 
-    font-weight: 300;
+    font-weight: 500;
     font-size: 24px;
     text-align: start;
     margin-bottom: 0.5rem;
@@ -73,3 +92,66 @@
     } 
 }
 
+.wrapper {
+    font-size: 60px;
+    font-family: Poppins;
+    font-weight: 500;
+    text-align: start;
+    display: flex;
+    margin-bottom: 3rem;
+
+    @media (max-width: 1000px) {
+        display: none
+    } 
+}
+.wrapper .static{
+    color: var(--color-dark);
+}
+
+.wrapper .dynamic {
+    line-height: 90px;
+    height: 90px;
+    overflow: hidden;
+    margin: 0;
+    padding-left: 1rem;
+}
+
+.dynamic li {
+    list-style: none;
+    color: var(--color-link);
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -360px;
+
+        @media (max-width: 1000px) {
+            top: -160px;
+        } 
+    }
+}
+
+.dynamic li::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid orange;
+    background-color: var(--color-bg);
+    left: 0;
+    animation: typing 3s steps(10)
+    infinite;
+}
+
+@keyframes typing {
+    40%,
+    60% {
+        left: calc(100% + 30px);
+    }
+    100% {
+        left: 0;
+    }
+}

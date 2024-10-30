@@ -27,9 +27,7 @@ export const NavLink: React.FC<NavLinkProps> = (props) => {
     return (
         <a className={cn({['selected']: selected})} target="_blank" rel="noopener noreferrer" onClick={props.onClick}>
             {props.port.toUpperCase()}
-            {props.selectedPortfolio === props.port &&
-                <ArrowRightOutlined className="icon"/>
-            }
+            <ArrowRightOutlined className="icon"/>
         </a>
     )
 }

@@ -33,7 +33,7 @@ const ProjectsSection: React.FC<SectionProps> = (props) => {
     return (
         <div ref={props.sectionRef} className='column'>
             <h3 className="sectionHeading">
-                FEATURED PROJECTS / <b className='accent'>software engineering</b>
+                FEATURED PROJECTS / <b className='accent'>web applications</b>
             </h3>
 
             <Fade cascade damping={0.2}>
