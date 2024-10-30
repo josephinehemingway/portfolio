@@ -2,6 +2,8 @@ import React from 'react';
 import './Navbar.css'
 import { useScrollDirection } from '../utils'
 import Logo from '../../../assets/images/logo.png'
+import { Button } from 'antd';
+import { DownloadOutlined } from '@ant-design/icons';
 
 interface Props {
     onClickAbout: () => void
@@ -22,7 +24,10 @@ const Navbar: React.FC<Props> = (props) => {
                 <div className='nav-list-element' onClick={props.onClickAbout}>About</div>
                 <div className='nav-list-element' onClick={props.onClickExperience}>Experience</div>
                 <div className='nav-list-element' onClick={props.onClickProjects}>Projects</div>
-                <div className='nav-list-element' onClick={props.onClickResume}>Resume</div>
+                <Button className='downloadBtn' color='default' variant='filled' onClick={props.onClickResume}>
+                    Resume
+                    <DownloadOutlined />
+                </Button>
             </div>
         </div>
     );

@@ -19,6 +19,7 @@ h1 {
     min-height: 100vh;
     background: var(--color-bg);
     overflow-y: scroll;
+    overflow-x: hidden;
     padding: 0 10%;
 
     @media (min-width: 1000px) {
@@ -186,7 +187,7 @@ h1 {
 
 .showMobile {
     display: none;
-    
+
     @media (max-width: 600px) {
         display: contents;
     } 

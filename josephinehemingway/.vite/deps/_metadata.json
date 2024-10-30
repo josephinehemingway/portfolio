@@ -1,0 +1,76 @@
+{
+  "hash": "1d2f2176",
+  "configHash": "9e3a1b9b",
+  "lockfileHash": "dfae8573",
+  "browserHash": "5ad0046a",
+  "optimized": {
+    "react/jsx-dev-runtime": {
+      "src": "../../node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "ebecc264",
+      "needsInterop": true
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "4b799e71",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "4450c5d4",
+      "needsInterop": true
+    },
+    "react-icons/bs": {
+      "src": "../../node_modules/react-icons/bs/index.mjs",
+      "file": "react-icons_bs.js",
+      "fileHash": "0ecd75be",
+      "needsInterop": false
+    },
+    "react-awesome-reveal": {
+      "src": "../../node_modules/react-awesome-reveal/dist/index.js",
+      "file": "react-awesome-reveal.js",
+      "fileHash": "3da2446f",
+      "needsInterop": false
+    },
+    "@ant-design/icons": {
+      "src": "../../node_modules/@ant-design/icons/es/index.js",
+      "file": "@ant-design_icons.js",
+      "fileHash": "e6f44746",
+      "needsInterop": false
+    },
+    "antd": {
+      "src": "../../node_modules/antd/es/index.js",
+      "file": "antd.js",
+      "fileHash": "3228c979",
+      "needsInterop": false
+    },
+    "classnames": {
+      "src": "../../node_modules/classnames/index.js",
+      "file": "classnames.js",
+      "fileHash": "a55dcf7c",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-HCGKX5ED": {
+      "file": "chunk-HCGKX5ED.js"
+    },
+    "chunk-ZTZK5FPQ": {
+      "file": "chunk-ZTZK5FPQ.js"
+    },
+    "chunk-5NNFPNAN": {
+      "file": "chunk-5NNFPNAN.js"
+    },
+    "chunk-WNPTCGAH": {
+      "file": "chunk-WNPTCGAH.js"
+    },
+    "chunk-BTBXNPUG": {
+      "file": "chunk-BTBXNPUG.js"
+    },
+    "chunk-5WRI5ZAA": {
+      "file": "chunk-5WRI5ZAA.js"
+    }
+  }
+}

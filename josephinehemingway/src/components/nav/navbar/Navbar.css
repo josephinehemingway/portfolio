@@ -41,17 +41,12 @@
     font-size: 20px;
     font-weight: 400;
     font-family: Poppins;
-    color: var(--color-mediumgray);
     text-align: start;
+    align-items: center;
     margin: 0;
-
-    @media (max-width: 600px) {
-        font-size: 18px;
-    } 
-
-    font-family: "Poppins", sans-serif;
     color: var(--color-lightgray);
     text-transform: uppercase;
+    cursor: pointer;
 
     @media (max-width: 600px) {
         display: none;
@@ -69,6 +64,17 @@
 .nav-list-element:hover {
     color: var(--color-dark);
     transition: 0.3s;
-    text-decoration: underline;
     transition: ease-in-out 0.2s;
+}
+
+.downloadBtn {
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Poppins;
+    text-align: start;
+    color: var(--color-lightgray);
+    text-transform: uppercase;
+    margin: 0 1rem;
+    padding: 1.25rem;
 }
