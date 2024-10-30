@@ -21,6 +21,7 @@
 
     @media (max-width: 600px) {
         padding: 10px 8%;
+        width: calc(100% - 16%);
     }  
 }
 

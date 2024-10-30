@@ -58,6 +58,7 @@ h1 {
     font-family: Gistesy;
     font-size: 90px;
     line-height: 80px;
+    color: var(--color-dark);
 }
 
 .name {
