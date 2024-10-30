@@ -26,7 +26,7 @@ const Home = () => {
 	}
 
     const portfolioLinks = (
-        <div className="column" style={{margin: '3rem 0'}}>
+        <div className="portfolio">
             <h3 className="accent">
                 Select Portfolio
             </h3>
@@ -53,16 +53,21 @@ const Home = () => {
             <div className="page first">
                 <div className="responsiveRow">
                     <div className="column left">
-                        <img className='illustration' src={Jo} />
-
-                        <div className="firstname">
-                            Josephine
+                        <div className="responsiveCol">
+                            <img className='illustration' src={Jo} />
+                            <div className="column" style={{paddingBottom: 0}}>
+                                <div className="firstname">
+                                    Josephine
+                                </div>
+                                <div className="name">
+                                    Hemingway
+                                </div>
+                            </div>
                         </div>
-                        <div className="name">
-                            Hemingway
-                        </div>
 
-                        {portfolioLinks}
+                        <div className="hideMobile">
+                            {portfolioLinks}
+                        </div>
                     </div>
 
                     <div className="column">
@@ -77,8 +82,11 @@ const Home = () => {
                             </ul>
                         </div>
                         
-                        
                         <About sectionRef={aboutRef}/>
+
+                        <div className="showMobile">
+                            {portfolioLinks}
+                        </div>
 
                         <ExperienceSection experienceType={selectedPortfolio} sectionRef={experienceRef}/>
 

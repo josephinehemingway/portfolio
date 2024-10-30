@@ -24,7 +24,7 @@ const ExperienceCard: React.FC<Props> = ({experience}) => {
     
   return (
     <div className='responsiveRow'>
-        <div className='column left' style={{marginRight: '1rem'}}>
+        <div className='column left'>
             <h3 className="itemLabel">
                 {experience.company}
             </h3>

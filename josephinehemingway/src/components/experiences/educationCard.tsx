@@ -6,7 +6,7 @@ const EducationCard: React.FC = () => {
     
   return (
     <div className='responsiveRow'>
-        <div className='column left' style={{marginRight: '1rem'}}>
+        <div className='column left'>
             <h3 className="itemLabel">
                Bachelor's Degree (Honors)
             </h3>
