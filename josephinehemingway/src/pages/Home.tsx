@@ -78,7 +78,7 @@ const Home = () => {
                                 <li><span className={'static'}>a</span> UI developer</li>
                                 <li><span className={'static'}>a</span> designer</li>
                                 <li><span className={'static'}>an</span> entrepreneur</li>
-                                <li><span className={'static'}>a</span> photographer</li>
+                                <li><span className={'static'}>an</span> artist</li>
                             </ul>
                         </div>
                         
