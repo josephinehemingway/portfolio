@@ -19,7 +19,6 @@ h1 {
     background: var(--color-bg);
     overflow: hidden;
     padding: 0 10%;
-    margin: 2rem 0;
 
     @media (min-width: 1000px) {
         flex-direction: row;
