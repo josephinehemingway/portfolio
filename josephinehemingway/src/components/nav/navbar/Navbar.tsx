@@ -4,18 +4,17 @@ import { useScrollDirection } from '../utils'
 import Logo from '../../../assets/images/logo.webp'
 import { Button } from 'antd';
 import { DownloadOutlined } from '@ant-design/icons';
+import Resume from '../../../assets/Resume 2024.pdf'
 
 interface Props {
     onClickAbout: () => void
     onClickExperience: () => void
     onClickProjects: () => void
-    onClickResume: () => void
 }
 
 const Navbar: React.FC<Props> = (props) => {
 
     const scrollDirection = useScrollDirection();
-    console.log('aaa', scrollDirection)
 
     return (
         <div className={`navbar ${scrollDirection === "down" ? "hide" : "show"}`} >
@@ -24,10 +23,12 @@ const Navbar: React.FC<Props> = (props) => {
                 <div className='nav-list-element' onClick={props.onClickAbout}>About</div>
                 <div className='nav-list-element' onClick={props.onClickExperience}>Experience</div>
                 <div className='nav-list-element' onClick={props.onClickProjects}>Gallery</div>
-                <Button className='downloadBtn' color='default' variant='filled' onClick={props.onClickResume}>
-                    Resume
-                    <DownloadOutlined />
-                </Button>
+                <a href={Resume} download="JosephineHemingway_Resume2024" target='_blank'>
+                    <Button className='downloadBtn' color='default' variant='filled' >
+                        Resume
+                        <DownloadOutlined />
+                    </Button>
+                </a>
             </div>
         </div>
     );

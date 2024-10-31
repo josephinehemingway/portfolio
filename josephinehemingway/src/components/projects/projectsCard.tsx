@@ -22,8 +22,8 @@ export interface Props {
 }
 
 const ProjectCard: React.FC<Props> = ({ project, isMobile }) => {
-    const tags = project.techStack && project.techStack.map((tech) => {
-        return <CustomTag text={tech} />
+    const tags = project.techStack && project.techStack.map((tech, index) => {
+        return <CustomTag text={tech} key={index} />
     })
 
     let moreInfoLink

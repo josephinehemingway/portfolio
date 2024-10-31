@@ -31,13 +31,14 @@ const Home = () => {
                 Select Portfolio
             </h3>
             {
-                Object.values(portfolio).map((p) => {
+                Object.values(portfolio).map((p, index) => {
                     const handleClick = () => {
                         setSelectedPortfolio(p)
                         onClickSection(experienceRef)
                     }
                     return (
                         <NavLink 
+                            key={index}
                             onClick={handleClick}
                             port={p}
                             selectedPortfolio={selectedPortfolio}
@@ -54,7 +55,6 @@ const Home = () => {
                 onClickAbout={() => onClickSection(aboutRef)} 
                 onClickExperience={() => onClickSection(experienceRef)} 
                 onClickProjects={() => onClickSection(projectsRef)} 
-                onClickResume={() => onClickSection(aboutRef)} 
             />
             <div className="page first">
                 <div className="responsiveRow">

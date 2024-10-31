@@ -16,7 +16,7 @@ const About: React.FC<SectionProps> = ({sectionRef}) => {
             </h3>
             <p>
                 I'm passionate about many things, especially when design intersects with technology to solve problems. 
-                <b className='bold'>{' '} Seeing my ideas come to life is what truly captivates me.</b>
+                <b> Seeing my ideas come to life is what truly captivates me.</b>
             </p>
             <p>
                 When I'm not working, I spend my spare time learning, playing sports and pursuing my artistic interests through creative projects in 

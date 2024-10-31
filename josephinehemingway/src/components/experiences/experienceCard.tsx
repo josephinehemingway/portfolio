@@ -18,8 +18,8 @@ export interface Props {
 }
 
 const ExperienceCard: React.FC<Props> = ({experience}) => {
-    const tags = experience.techStack && experience.techStack.map((tech) => {
-        return <CustomTag text={tech} />
+    const tags = experience.techStack && experience.techStack.map((tech, index) => {
+        return <CustomTag text={tech} key={index} />
     })
     
   return (
