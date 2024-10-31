@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -28,6 +26,11 @@ p {
 }
 
 @font-face {
+  font-family: 'Poppins';
+  src: local('Poppins'), url(./assets/fonts/Poppins/Poppins-Regular.ttf) format('truetype');
+}
+
+@font-face {
   font-family: "Gistesy";
   src: local("Gistesy"),
   url(./assets/fonts/gistesy/Gistesy.ttf) format("truetype");
@@ -37,13 +40,6 @@ p {
   font-family: "Prata";
   src: local("Prata"),
   url(./assets/fonts/Prata/Prata-Regular.ttf) format("truetype");
-}
-
-
-@font-face {
-  font-family: "Courier";
-  src: local("Courier"),
-  url(./assets/fonts/Courier/Courier_Prime/CourierPrime-Regular.ttf) format("truetype");
 }
 
 
