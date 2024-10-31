@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navbar.css'
 import { useScrollDirection } from '../utils'
-import Logo from '../../../assets/images/logo.png'
+import Logo from '../../../assets/images/logo.webp'
 import { Button } from 'antd';
 import { DownloadOutlined } from '@ant-design/icons';
 

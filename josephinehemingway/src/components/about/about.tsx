@@ -19,8 +19,7 @@ const About: React.FC<SectionProps> = ({sectionRef}) => {
                 <b className='bold'>{' '} Seeing my ideas come to life is what truly captivates me.</b>
             </p>
             <p>
-                {/* I started a small home based business when I was 19, and I currently work as a software engineer after college.  */}
-                Outside of work, I channel my spare time learning, working on projects, playing sports and pursuing my artistic interests through creative projects in 
+                When I'm not working, I spend my spare time learning, playing sports and pursuing my artistic interests through creative projects in 
                 <a href={tbpIG} target="_blank" rel="noopener noreferrer">{' '} floral design</a>, 
                 <a href={vscoUrl} target="_blank" rel="noopener noreferrer">{' '} photography{' '} </a> and 
                 exploring various art mediums. 

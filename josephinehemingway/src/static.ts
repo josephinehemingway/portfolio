@@ -55,7 +55,6 @@ import v1 from './assets/images/art/v1.webp'
 import v2 from './assets/images/art/v2.webp'
 
 import roses from './assets/images/tbp/roses.webp'
-import crochet from './assets/images/tbp/crochet.webp'
 import blue1 from './assets/images/tbp/blue1.webp'
 import tbp2 from './assets/images/tbp/tbp2.webp'
 import tbp3 from './assets/images/tbp/tbp3.webp'
@@ -65,6 +64,7 @@ import tbp6 from './assets/images/tbp/tbp6.webp'
 import tbp7 from './assets/images/tbp/tbp7.webp'
 import tbp8 from './assets/images/tbp/tbp8.webp'
 import tbp9 from './assets/images/tbp/tbp9.webp'
+import tbp10 from './assets/images/tbp/tbp10.webp'
 import twf1 from './assets/images/tbp/twf1.webp'
 import twf2 from './assets/images/tbp/twf2.webp'
 import sunflower from './assets/images/tbp/sunflower.webp'
@@ -96,8 +96,8 @@ export const flowerPics = [
     zh4, xb1, xb2,
     twf1, tbp2, twf2,
     tbp3, tbp4, xb3,
-    tbp6, tbp7, tbp8,
-    sunflower, crochet, blue1
+    tbp7, sunflower, tbp8,
+    tbp6, blue1, tbp10
 ]
 
 export const drawings = [
