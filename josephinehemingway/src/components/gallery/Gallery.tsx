@@ -15,7 +15,6 @@ const Gallery: React.FC<Props> = ({title, imgUrls}) => {
 
             <div className='gallery'>
                 <Fade cascade damping={0.2}>
-                    <Image.PreviewGroup>
                     {imgUrls.map((url, index) => (
                         <Image
                             loading='lazy'
@@ -25,7 +24,6 @@ const Gallery: React.FC<Props> = ({title, imgUrls}) => {
                             className='galleryImg'
                         />
                     ))}
-                    </Image.PreviewGroup>
                 </Fade>
             </div>
         </h3>
