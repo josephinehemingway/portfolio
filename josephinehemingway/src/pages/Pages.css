@@ -177,6 +177,7 @@ h1 {
     width: 100%;
     max-width: calc(100vw - 25%);
     margin: 3rem 0;
+    height: 150px;
 }
 
 .hideMobile {
