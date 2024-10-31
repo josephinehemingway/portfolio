@@ -1,7 +1,7 @@
 import React, { RefObject, useRef, useState } from "react";
 import "./Pages.css";
 import Navbar from "../components/nav/navbar/Navbar";
-import Jo from "../assets/images/jo.png"
+import Jo from "../assets/images/jo.webp"
 import ExperienceSection from "../components/experiences/ExperienceSection";
 import { portfolio } from "../static";
 import About from "../components/about/about";
