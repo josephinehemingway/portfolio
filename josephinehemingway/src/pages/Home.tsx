@@ -7,7 +7,6 @@ import { portfolio } from "../static";
 import About from "../components/about/about";
 import { NavLink } from "../components/reusable";
 import ProjectsWrapper from "../components/projectsWrapper/projectsWrapper";
-import { ArrowRightOutlined, MailOutlined } from "@ant-design/icons";
 
 export interface SectionProps {
     sectionRef: React.RefObject<HTMLDivElement>
