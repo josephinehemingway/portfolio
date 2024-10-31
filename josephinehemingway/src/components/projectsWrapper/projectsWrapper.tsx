@@ -29,7 +29,7 @@ const ProjectsWrapper: React.FC<Props> = (props) => {
     }
 
     return (
-        <div ref={props.sectionRef}>{projects}</div>
+        <div className='page' ref={props.sectionRef}>{projects}</div>
     )
 }
 

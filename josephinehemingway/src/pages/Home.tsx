@@ -98,9 +98,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="page" ref={projectsRef}>
-                <ProjectsWrapper experienceType={selectedPortfolio} sectionRef={projectsRef} />
-            </div>
+            <ProjectsWrapper experienceType={selectedPortfolio} sectionRef={projectsRef} />
         </>
     );
 };
