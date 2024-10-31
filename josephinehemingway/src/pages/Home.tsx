@@ -7,6 +7,7 @@ import { portfolio } from "../static";
 import About from "../components/about/about";
 import { NavLink } from "../components/reusable";
 import ProjectsWrapper from "../components/projectsWrapper/projectsWrapper";
+import { ArrowRightOutlined, MailOutlined } from "@ant-design/icons";
 
 export interface SectionProps {
     sectionRef: React.RefObject<HTMLDivElement>
@@ -28,7 +29,7 @@ const Home = () => {
     const portfolioLinks = (
         <div className="portfolio">
             <h3 className="accent">
-                Select Portfolio
+                View Portfolio
             </h3>
             {
                 Object.values(portfolio).map((p, index) => {
@@ -46,6 +47,19 @@ const Home = () => {
                     )
                 })
             }
+        </div>
+    )
+
+    const contactInfo = (
+        <div className="portfolio">
+            <h3 className="accent">
+                Thanks for visiting my site! 
+            </h3>
+            <p style={{margin: '0.5rem 0'}}>I'd love to hear from you.</p>
+
+            <a target="_blank" rel="noopener noreferrer" href="mailto:josephine.hemingway@gmail.com">
+                Contact me
+            </a>
         </div>
     )
 
@@ -99,6 +113,10 @@ const Home = () => {
                 </div>
             </div>
             <ProjectsWrapper experienceType={selectedPortfolio} sectionRef={projectsRef} />
+            <div className="footer">
+                {portfolioLinks}
+                {contactInfo}
+            </div>
         </>
     );
 };
