@@ -28,18 +28,21 @@ p {
 @font-face {
   font-family: 'Poppins';
   src: local('Poppins'), url(./assets/fonts/Poppins/Poppins-Regular.ttf) format('truetype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Gistesy";
   src: local("Gistesy"),
   url(./assets/fonts/gistesy/Gistesy.ttf) format("truetype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Prata";
   src: local("Prata"),
   url(./assets/fonts/Prata/Prata-Regular.ttf) format("truetype");
+  font-display: swap;
 }
 
 
