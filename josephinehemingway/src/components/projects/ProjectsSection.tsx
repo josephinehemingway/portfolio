@@ -1,11 +1,10 @@
 import React from 'react'
-import { SectionProps } from '../about/about'
 import ProjectCard from './projectsCard'
 import { mobileProjects, otherProjects, projects } from '../../static'
 import { Fade } from 'react-awesome-reveal'
 
 
-const ProjectsSection: React.FC<SectionProps> = (props) => {
+const ProjectsSection: React.FC = () => {
 
     const projectCards = projects.map((proj, index) => {
         return <ProjectCard
@@ -31,7 +30,7 @@ const ProjectsSection: React.FC<SectionProps> = (props) => {
     })
 
     return (
-        <div ref={props.sectionRef} className='column'>
+        <div className='column'>
             <h3 className="sectionHeading">
                 FEATURED PROJECTS / <b className='accent'>web applications</b>
             </h3>

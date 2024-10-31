@@ -27,7 +27,6 @@ const ExperienceSection: React.FC<Props> = (props) => {
         // case portfolio.Photography:
         default:
             experiences = sweExperience
-
     }
 
     if (props.experienceType === portfolio.Entrepreneurship) {
@@ -35,6 +34,7 @@ const ExperienceSection: React.FC<Props> = (props) => {
             <div className='responsiveRow'>
                 {tbpPics.map((url, index) => (
                     <img
+                        loading='lazy'
                         key={index}
                         className='tbpBanner'
                         src={url}

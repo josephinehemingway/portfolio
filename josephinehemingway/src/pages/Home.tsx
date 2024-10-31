@@ -4,9 +4,9 @@ import Navbar from "../components/nav/navbar/Navbar";
 import Jo from "../assets/images/jo.png"
 import ExperienceSection from "../components/experiences/ExperienceSection";
 import { portfolio } from "../static";
-import ProjectsSection from "../components/projects/ProjectsSection";
 import About from "../components/about/about";
 import { NavLink } from "../components/reusable";
+import ProjectsWrapper from "../components/projectsWrapper/projectsWrapper";
 
 export interface SectionProps {
     sectionRef: React.RefObject<HTMLDivElement>
@@ -31,13 +31,19 @@ const Home = () => {
                 Select Portfolio
             </h3>
             {
-                Object.values(portfolio).map((p) => (
-                    <NavLink 
-                        onClick={() => setSelectedPortfolio(p)}
-                        port={p}
-                        selectedPortfolio={selectedPortfolio}
-                    />
-                ))
+                Object.values(portfolio).map((p) => {
+                    const handleClick = () => {
+                        setSelectedPortfolio(p)
+                        onClickSection(experienceRef)
+                    }
+                    return (
+                        <NavLink 
+                            onClick={handleClick}
+                            port={p}
+                            selectedPortfolio={selectedPortfolio}
+                        />
+                    )
+                })
             }
         </div>
     )
@@ -89,12 +95,11 @@ const Home = () => {
                         </div>
 
                         <ExperienceSection experienceType={selectedPortfolio} sectionRef={experienceRef}/>
-
                     </div>
                 </div>
             </div>
             <div className="page" ref={projectsRef}>
-                <ProjectsSection sectionRef={projectsRef}/>
+                <ProjectsWrapper experienceType={selectedPortfolio} sectionRef={projectsRef} />
             </div>
         </>
     );

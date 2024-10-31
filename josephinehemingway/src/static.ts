@@ -19,9 +19,6 @@ import Irecognise5 from './assets/images/projects/iRecognise/ir5.png'
 import gsfb1 from './assets/images/projects/foodbuddy/gs1.png'
 import gsfb2 from './assets/images/projects/foodbuddy/gs2.png'
 import gsfb3 from './assets/images/projects/foodbuddy/gs3.png'
-import tbp1 from './assets/images/tbp/tulips.jpeg'
-import tbp2 from './assets/images/tbp/xuangub.jpg'
-import tbp3 from './assets/images/tbp/roses.jpg'
 import ok1 from './assets/images/projects/outdoorkaki/ok1.png'
 import ok2 from './assets/images/projects/outdoorkaki/ok2.png'
 import ok3 from './assets/images/projects/outdoorkaki/ok3.png'
@@ -40,6 +37,48 @@ import hfgw8 from './assets/images/projects/healthy/hfgw8.png'
 import notecard from './assets/images/projects/others/notecard.png'
 import admin from './assets/images/projects/others/admin.png'
 
+
+import taylor from './assets/images/art/taylor.png'
+import olivia from './assets/images/art/olivia.png'
+import soju from './assets/images/art/soju.png'
+import phs from './assets/images/art/phs.png'
+import ariel from './assets/images/art/ariel.png'
+import girl2 from './assets/images/art/girl2.png'
+import girl3 from './assets/images/art/girl3.png'
+import bubblegum from './assets/images/art/bubblegum.png'
+import lisa from './assets/images/art/lisa.png'
+import jk from './assets/images/art/jk.png'
+import cactus from './assets/images/art/cactus.png'
+import avocado from './assets/images/art/avocado.png'
+import latte from './assets/images/art/latte.png'
+import v1 from './assets/images/art/v1.png'
+import v2 from './assets/images/art/v2.png'
+
+import roses from './assets/images/tbp/roses.jpg'
+import crochet from './assets/images/tbp/crochet.png'
+import blue1 from './assets/images/tbp/blue1.png'
+import tbp2 from './assets/images/tbp/tbp2.jpeg'
+import tbp3 from './assets/images/tbp/tbp3.jpeg'
+import tbp4 from './assets/images/tbp/tbp4.jpeg'
+import tbp5 from './assets/images/tbp/tbp5.jpeg'
+import tbp6 from './assets/images/tbp/tbp6.jpeg'
+import tbp7 from './assets/images/tbp/tbp7.jpeg'
+import tbp8 from './assets/images/tbp/tbp8.png'
+import tbp9 from './assets/images/tbp/tbp9.jpg'
+import twf1 from './assets/images/tbp/twf1.png'
+import twf2 from './assets/images/tbp/twf2.png'
+import sunflower from './assets/images/tbp/sunflower.png'
+import xb1 from './assets/images/tbp/xb1.png'
+import xb2 from './assets/images/tbp/xb2.png'
+import xb3 from './assets/images/tbp/xb3.png'
+import xuangub from './assets/images/tbp/xuangub.jpg'
+import zh1 from './assets/images/tbp/zh1.png'
+import zh2 from './assets/images/tbp/zh2.png'
+import zh3 from './assets/images/tbp/zh3.png'
+import zh4 from './assets/images/tbp/zh4.png'
+import tulips from './assets/images/tbp/tulips.jpeg'
+
+
 export enum portfolio {
     SoftwareEngineering = 'Software Engineering',
     Design = 'Design',
@@ -48,10 +87,30 @@ export enum portfolio {
 }
 
 export const tbpPics = [
-    tbp1, tbp2, tbp3
+    tulips, xuangub, roses,
+]
+
+export const flowerPics = [
+    xuangub, tbp5, tbp9,
+    zh1, zh2, zh3, 
+    zh4, xb1, xb2,
+    twf1, tbp2, twf2,
+    tbp3, tbp4, xb3,
+    tbp6, tbp7, tbp8,
+    sunflower, crochet, blue1
+]
+
+export const drawings = [
+    olivia, bubblegum, taylor, 
+    ariel, soju, girl2,
+    phs, v2, v1,
+    lisa, girl3, jk,
+    avocado, latte, cactus
 ]
 
 export const tbpUrl = 'https://www.thebloomingpalettesg.com'
+export const tbpIG = 'https://www.instagram.com/thebloomingpalette'
+export const vscoUrl = 'https://vsco.co/xsparklinex/gallery'
 
 export const designExperience: Experience[] = [
     {
@@ -59,7 +118,7 @@ export const designExperience: Experience[] = [
         date: '2020 Aug - Present',
         desc: 'As the creative director, I design floral arrangements and all sorts of marketing materials ranging from event and product photography, Instagram posts, website design, gift cards and more. We design floral products for corporate gifting, events, weddings and all other occasions.',
         role: 'Head Florist, Founder',
-        url: 'https://www.instagram.com/thebloomingpalette',
+        url: tbpIG,
         techStack: ['Canva', 'Adobe Photoshop', 'Adobe Lightroom']
     },
     {

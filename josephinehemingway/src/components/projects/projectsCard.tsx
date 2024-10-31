@@ -41,6 +41,7 @@ const ProjectCard: React.FC<Props> = ({ project, isMobile }) => {
                 >
                     {project.imgUrls.map((url, index) => (
                         <Image
+                            loading='lazy'
                             key={index}
                             src={url}
                             alt=""

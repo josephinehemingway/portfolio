@@ -189,3 +189,19 @@
     font-size: 18px;
     text-align: start;
 }
+
+.galleryImg {
+    margin-right: 1rem;
+    object-fit: cover;
+}
+
+.gallery {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto auto auto;
+    margin: 2rem 0;
+
+    @media (max-width: 600px) {
+        grid-template-columns: auto auto;
+    } 
+}

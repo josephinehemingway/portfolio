@@ -23,7 +23,7 @@ const Navbar: React.FC<Props> = (props) => {
             <div className='nav-list'>
                 <div className='nav-list-element' onClick={props.onClickAbout}>About</div>
                 <div className='nav-list-element' onClick={props.onClickExperience}>Experience</div>
-                <div className='nav-list-element' onClick={props.onClickProjects}>Projects</div>
+                <div className='nav-list-element' onClick={props.onClickProjects}>Gallery</div>
                 <Button className='downloadBtn' color='default' variant='filled' onClick={props.onClickResume}>
                     Resume
                     <DownloadOutlined />

@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles.css'
 import '../../pages/Pages.css'
+import { tbpIG, vscoUrl } from '../../static'
 
 export interface SectionProps {
     sectionRef?: React.RefObject<HTMLDivElement>
@@ -19,7 +20,10 @@ const About: React.FC<SectionProps> = ({sectionRef}) => {
             </p>
             <p>
                 {/* I started a small home based business when I was 19, and I currently work as a software engineer after college.  */}
-                Outside of work, I channel my spare time learning, working on projects, playing sports and pursuing my artistic interests through creative projects in floral design, photography and exploring various art mediums. 
+                Outside of work, I channel my spare time learning, working on projects, playing sports and pursuing my artistic interests through creative projects in 
+                <a href={tbpIG} target="_blank" rel="noopener noreferrer">{' '} floral design</a>, 
+                <a href={vscoUrl} target="_blank" rel="noopener noreferrer">{' '} photography{' '} </a> and 
+                exploring various art mediums. 
             </p>
         </div>
   )
