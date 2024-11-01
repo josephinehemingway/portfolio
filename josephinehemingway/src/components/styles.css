@@ -205,3 +205,13 @@
         grid-template-columns: auto auto;
     } 
 }
+
+.download {
+    margin: 0;
+}
+
+.download:hover {
+    .anticon {
+        transform: none;
+    }
+}

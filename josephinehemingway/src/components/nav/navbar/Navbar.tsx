@@ -23,7 +23,7 @@ const Navbar: React.FC<Props> = (props) => {
                 <div className='nav-list-element' onClick={props.onClickAbout}>About</div>
                 <div className='nav-list-element' onClick={props.onClickExperience}>Experience</div>
                 <div className='nav-list-element' onClick={props.onClickProjects}>Gallery</div>
-                <a href={Resume} download="JosephineHemingway_Resume2024" target='_blank'>
+                <a href={Resume} className='download' download="JosephineHemingway_Resume2024" target='_blank' rel="noopener noreferrer">
                     <Button className='downloadBtn' color='default' variant='filled' >
                         Resume
                         <DownloadOutlined />
